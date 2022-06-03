@@ -21,20 +21,20 @@ const countries = [
 const countriesPrice = [100, 200, 300, 400, 500, 600];
 
 
-let userNameRegistration = prompt("Ваше ім'я");
-let userPassRegistration = prompt('password');
+// let userNameRegistration = prompt("Ваше ім'я");
+// let userPassRegistration = prompt('password');
 
 let userName = '';
 let userPass = '';
 
 do {
-    userName = prompt("Ваше ім'я при реєстрації");
-    userPass = prompt('password при реєстрації');
+    // userName = prompt("Ваше ім'я при реєстрації");
+    // userPass = prompt('password при реєстрації');
 } while (userName !== userNameRegistration || userPass !== userPassRegistration);
 
 console.log('Ваш логін та пароль успішний');
 
-let maxPrice = prompt('Яку суму готові витратити на тур?');
+// let maxPrice = prompt('Яку суму готові витратити на тур?');
 
 if (maxPrice >= 100 && maxPrice < 200) {
     alert(`Країна в яку ви можете поїхати ${countries[0]}`)
@@ -61,4 +61,4 @@ for (let i = 0; i < countries.length; i += 1) {
     }
 }
 
-alert(`Тур оплачений, на вашому рахунку залишилось ${userCredits}$`);
+// alert(`Тур оплачений, на вашому рахунку залишилось ${userCredits}$`);

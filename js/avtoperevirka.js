@@ -37,4 +37,4 @@ function countProps(object) {
   // Change code above this line
 }
 
-console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ name: "Mango", age: 2 }));
