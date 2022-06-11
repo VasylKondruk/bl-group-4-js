@@ -1,8 +1,8 @@
 /**String repeat */
 // Write a function called repeatStr which repeats the given string string exactly n times.
 
-function repeatStr (n, s) {
-    return s.repeat(n)
+function repeatStr(n, s) {
+  return s.repeat(n);
 }
 
 // console.log(repeatStr(6, "I")); // "IIIIII"
@@ -16,7 +16,7 @@ function repeatStr (n, s) {
 // Return true if the array contains the value, false if not.
 
 function check(a, x) {
-    return a.includes(x) ? true : false;
+  return a.includes(x) ? true : false;
 }
 
 // console.log((check([101, 45, 75, 105, 99, 107], 107)));
@@ -25,8 +25,8 @@ function check(a, x) {
 
 // ================================================================================
 // Write a function to split a string and convert it into an array of words.
-function stringToArray(string){
-	return string.split(' ')
+function stringToArray(string) {
+  return string.split(' ');
 }
 
 // console.log(stringToArray("I love arrays they are my favorite"));
@@ -41,18 +41,16 @@ function stringToArray(string){
 // ...
 
 function rowSumOddNumbers(n) {
-    let total = 0;
+  let total = 0;
 
-    for (let i = (n - 1) * n + 1; i <= n * n + (n -1 ); i += 2) {     
-        total += i;
-    }
+  for (let i = (n - 1) * n + 1; i <= n * n + (n - 1); i += 2) {
+    total += i;
+  }
 
-    return total;
-    // return Math.pow(n, 3);
+  return total;
+  // return Math.pow(n, 3);
 }
-
 
 // console.log(rowSumOddNumbers(5));
 // console.log(rowSumOddNumbers(42));
 // console.log(rowSumOddNumbers(100));
-

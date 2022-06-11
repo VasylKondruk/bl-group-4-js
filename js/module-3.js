@@ -24,9 +24,9 @@ const books = [
 ];
 
 for (const book of books) {
-  console.log(book.title);
-  console.log(book.author);
-  console.log(book.rating);
+  // console.log(book.title);
+  // console.log(book.author);
+  // console.log(book.rating);
 }
 
 /**=================================================== */
