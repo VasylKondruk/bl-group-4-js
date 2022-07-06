@@ -147,3 +147,74 @@ function convert(...args) {
 
 // console.log(convert('1', 2, 3, '4'));
 // console.log(convert(1, '2', '3', 4));
+
+// ================================================
+// const users = [
+//   { id: 1, name: 'John' },
+//   { id: 2, name: 'Pete' },
+//   { id: 3, name: 'Mary' },
+// ];
+
+// const foo = id => {
+//   return users.find(user => id === user.id);
+// };
+
+// console.log(foo(3));
+
+// =================================================
+// 2. Виведи в консоль стрічку слідуючого типу: "Имя - позиция в массиве Х и сам массив"
+//
+const robots = ['Bender', 'Awesom-O', 'Johnny 5'];
+
+// robots.forEach((robot, index, array) =>
+// console.log(`${robot}, ${index}`, array),
+// );
+
+// ================================================
+// 3. Напиши ф-цію positiveSum, яка приймає масив чисел та повертає їх суму.
+// // Але рахуватись мають лише позитивні числа!!!
+
+const positiveSum = arr => {
+  return arr.reduce((acc, element) => {
+    if (element > 0) {
+      return acc + element;
+    }
+    return acc;
+  });
+};
+
+// console.log(positiveSum([2, 4, 6, 8])); // 20
+// console.log(positiveSum([0, -3, 5, 7]));
+
+// ====================================================
+// 4. Відсортуй обєкти по збільшеню та зменшеню score
+//
+// const users = [
+//   { name: 'Victor', score: 20 },
+//   { name: 'Mario', score: 10 },
+//   { name: 'Tatiana', score: 30 },
+// ];
+
+// function usersSortedByScoreDesc(users) {
+//   return [...users].slice().sort((a, b) => a.score - b.score);
+// }
+
+// function usersSortedByScoreAsc(users) {
+//   return [...users].slice().sort((a, b) => b.score - a.score);
+// }
+
+// console.log(usersSortedByScoreDesc(users)); // [{name: "Tatiana", score: 30}, {name: "Victor", score: 20}, {name: "Mario", score: 10}]
+// console.log(usersSortedByScoreAsc(users)); // [{name: "Mario", score: 10}, {name: "Victor", score: 20}, {name: "Tatiana", score: 30}]
+// // console.log(users.slice());
+// console.log(users);
+
+// ==========================================================
+//  Напиши ф-цію, яка фільтрує масив та повертає елементи, окрім того, що був переданий в дану функцію в якості аргумента.
+
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// function foo(name) {
+//   return animals.filter(animal => animal !== name);
+// }
+
+// console.log(foo('pigs')); // ["goats", "sheep"]
